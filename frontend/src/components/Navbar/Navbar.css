@@ -1,0 +1,122 @@
+#whole-navbar{
+    background-color: white;
+    z-index: 100;
+    padding: 0.8vw 0 1vw 0;
+    position: sticky;
+    top: 0%;
+}
+
+#navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    background-color: white;
+}
+
+#navbar .logo img{
+    width: 90%;
+}
+
+#navbar .links{
+    width: 35%;
+}
+
+#navbar .links ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.links ul li{
+    list-style: none;
+    cursor: pointer;
+}
+
+.links ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.links ul li.active, .links ul li:hover{
+    padding-bottom: 2px;
+    border-bottom: 3px solid tomato;
+}
+
+#navbar .extra{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#navbar .extra.logged-in{
+    justify-content: space-around;
+}
+
+#navbar .extra img{
+    cursor: pointer;
+}
+
+#navbar .extra .cart .dot{
+    position: absolute;
+    width: 0.8vw;
+    height: 0.8vw;
+    border-radius: 50%;
+    background-color: tomato;
+    top: 2.1%;
+    right: 18.8%; 
+}
+
+#navbar .extra button{
+    background: transparent;
+    font-size: 1.1vw;
+    padding: 1vw 2vw;
+    border-radius: 24px;
+    border: 1px solid black;
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+.extra button:hover{
+    background-color: tomato !important;
+    color: white;
+    border-color: white !important;
+    transition: all 0.5s ease-in-out;
+}
+
+@media screen and (max-width: 1200px) {
+    #navbar .logo img{
+        width: 75%;
+    }
+
+    #navbar .links{
+        width: 40%;
+    }
+
+    #navbar .extra{
+        width: 20%;
+    }
+
+    #navbar .extra button{
+        font-size: 1.1vw;
+        padding: 0.8vw 1.5vw;
+    }
+}
+
+
+@media screen and (max-width: 998px) {
+    #navbar .logo img{
+        width: 65%;
+    }
+
+    #navbar .links{
+        width: 45%;
+    }
+
+    #navbar .extra button{
+        font-size: 1.25vw;
+        padding: 0.8vw 1.5vw;
+    }
+}

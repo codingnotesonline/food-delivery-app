@@ -1,0 +1,21 @@
+#mobile-app{
+    margin-top: 12vw;
+    margin-bottom: 6vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 3vw;
+}
+
+#mobile-app .mobile-app-title{
+    text-align: center;
+}
+
+#mobile-app .mobile-app-title h1{
+    font-size: 3vw;
+}
+
+#mobile-app .mobile-app-links a{
+    padding: 1vw;
+}

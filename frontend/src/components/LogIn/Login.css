@@ -1,0 +1,98 @@
+#login{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin: 0 auto; */
+    position: fixed;
+    animation: login-animate 1s ease-in-out;
+}
+
+#login form{
+    position: absolute;
+    background-color: white;
+    padding: 1.5vw;
+    border-radius: 0.5vw;
+    max-width: 40%;
+}
+
+#login .upper-part{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#login .upper-part h2{
+    font-size: 2vw;
+}
+
+#login .upper-part .remove img{
+    cursor: pointer;
+}
+
+#login .inputs{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5vw;
+    margin-top: 1vw;
+}
+
+#login .inputs input{
+    border: 1px solid black;
+    outline: none;
+    padding: 0.5vw 0.4vw;
+    font-size: 1.1vw;
+    background-color: transparent;
+    border-radius: 0.25vw;  
+}
+
+#login .submit{
+    margin-top: 1.8vw;
+}
+
+#login .submit button{
+    width: 100%;
+    background-color: tomato;
+    color: white;
+    font-size: medium;
+    padding: 0.5vw 2vw;
+    border-radius: 0.4vw;
+    border: none;
+    cursor: pointer;
+}
+
+#login .privacy-policy-terms{
+    margin-top: 1vw;
+}
+
+#login .privacy-policy-terms p{
+    margin-left: 0.5vw;
+    display: inline;
+}
+
+#login .already-have-account{
+    margin-top: 1.5vw;
+}
+
+#login .already-have-account b{
+    color: tomato;
+    cursor: pointer;
+}
+
+#login.login-inactive{
+    display: none;
+}
+
+#login.login-active{
+    z-index: 20;
+}
+
+@keyframes login-animate {
+    0%{
+        top: -55%;
+    }
+    100%{
+        top: 0%;
+    }
+}

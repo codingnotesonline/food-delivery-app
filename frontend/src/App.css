@@ -1,0 +1,31 @@
+#container {
+    width: 100%;
+    padding-top: 1%;
+}
+
+#container #app {
+    width: 85%;
+    margin: 0 auto;
+    z-index: 10;
+}
+
+#container #app.blur{
+    filter: blur(8px);
+}
+
+/* #container.change-background{
+    filter: blur(7px);
+    -webkit-filter: blur(7px);
+} */
+
+@media screen and (max-width: 998px) {
+    #container #app {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #container #app {
+        width: 98%;
+    }
+}

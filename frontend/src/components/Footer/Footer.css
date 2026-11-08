@@ -1,0 +1,86 @@
+#footer{
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 4vw 10% 1vw 10%;
+    margin-top: 7vw;
+}
+
+#footer .content{
+    display: flex;
+    align-items: start; 
+    justify-content: space-between;
+    padding: 2vw 0;
+}
+
+#footer .content .general-info{
+    max-width: 50%;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    row-gap: 2vw;
+}
+
+#footer .content .general-info .general-info-links{
+    display: flex;
+    column-gap: 1.5vw;
+}
+
+#footer .content .company-info{
+    display: flex;
+    flex-direction: column;
+    row-gap: 2.5vw;
+}
+
+#footer .content .company-info .company-info-links{
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    row-gap: 1vw;
+}
+
+#footer .content .company-info .company-info-links a{
+    text-decoration: none;
+    color: white;
+}
+
+#footer .content .company-info .company-info-links a:hover{
+    text-decoration: line-through;
+}
+
+#footer .content .get-in-touch{
+    display: flex;
+    flex-direction: column;
+    row-gap: 2.5vw;
+}
+
+#footer .content .get-in-touch .get-in-touch-details{
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    row-gap: 0.5vw;
+}
+
+#footer .copyright{
+    padding-top: 2.5vw;
+    padding-bottom: 1vw;
+    text-align: center;
+}
+
+@media screen and (max-width: 998px) {
+    #footer{
+        padding: 4vw 5% 1vw 5%;
+    }
+
+    #footer .content .general-info .general-info-links{
+        column-gap: 1.7vw;
+    }
+
+    #footer .content .company-info .company-info-title h2{
+        font-size: 2.5vw;
+    }
+
+    #footer .content .get-in-touch .get-in-touch-title h2{
+        font-size: 2.5vw;
+    }
+}

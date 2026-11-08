@@ -1,0 +1,75 @@
+#header{
+    width: 100%;
+    height: 75vh;
+    border-radius: 0.8vw;
+    background: url('/header_img.png') no-repeat;
+    margin-top: 3vw;
+    display: flex;
+    align-items: start;
+    justify-content: end;
+    flex-direction: column;
+    color: white;
+    padding: 2vw 5vw;
+}
+
+.header-content{
+    animation: header-animation 1.5s ease-in-out;
+}
+
+#header .header-title h1{
+    font-size: 4.5vw;
+}
+
+#header .header-description{
+    margin-top: 4vh;    
+    max-width: 60%;
+}
+
+#header .view-more{
+    margin-top: 4vh;
+    margin-bottom: 2vh;
+}
+
+#header .view-more button{
+    background-color: white;
+    color: black;
+    font-size: 1.1vw;
+    padding: 1vw 2vw;
+    border-radius: 24px;
+    border: 1px solid white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+@keyframes header-animation {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    #header .view-more button{
+        font-size: 1.2vw;
+    }
+}
+
+@media screen and (max-width: 998px) {
+    #header .view-more button{
+        font-size: 1.35vw;
+    }
+    #header .header-title h1{
+        font-size: 6vw;
+    }
+    #header .header-description{  
+        max-width: 70%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #header .view-more button{
+        font-size: 1.5vw;
+    }
+}
